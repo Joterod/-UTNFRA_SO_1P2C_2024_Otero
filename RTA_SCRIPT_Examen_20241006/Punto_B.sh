@@ -61,14 +61,14 @@ sudo mount ${DISCO}9 /Examenes-UTN//alumno_3/parcial_2/
 sudo mount ${DISCO}10 /Examenes-UTN//alumno_3/parcial_3/
 sudo mount ${DISCO}11 /Examenes-UTN//profesores/
 echo "Particiones montadas, ahora las hacemos permanentes"
-echo "${DISCO}1 /Examenes-UTN//alumno_1/parcial_1/ ext4 defaults 0 0
-${DISCO}2 /Examenes-UTN//alumno_1/parcial_2/ ext4 defaults 0 0
-${DISCO}3 /Examenes-UTN//alumno_1/parcial_3/ ext4 defaults 0 0
-${DISCO}5 /Examenes-UTN//alumno_2/parcial_1/ ext4 defaults 0 0
-${DISCO}6 /Examenes-UTN//alumno_2/parcial_2/ ext4 defaults 0 0
-${DISCO}7 /Examenes-UTN//alumno_2/parcial_3/ ext4 defaults 0 0
-${DISCO}8 /Examenes-UTN//alumno_3/parcial_1/ ext4 defaults 0 0
-${DISCO}9 /Examenes-UTN//alumno_3/parcial_2/ ext4 defaults 0 0
-${DISCO}10 /Examenes-UTN//alumno_3/parcial_3/ ext4 defaults 0 0
-${DISCO}11 /Examenes-UTN//profesores/ ext4 defaults 0 0" | sudo tee -a /etc/fstab
+echo "${DISCO}1 /Examenes-UTN/alumno_1/parcial_1/ ext4 defaults 0 0
+${DISCO}2 /Examenes-UTN/alumno_1/parcial_2/ ext4 defaults 0 0
+${DISCO}3 /Examenes-UTN/alumno_1/parcial_3/ ext4 defaults 0 0
+${DISCO}5 /Examenes-UTN/alumno_2/parcial_1/ ext4 defaults 0 0
+${DISCO}6 /Examenes-UTN/alumno_2/parcial_2/ ext4 defaults 0 0
+${DISCO}7 /Examenes-UTN/alumno_2/parcial_3/ ext4 defaults 0 0
+${DISCO}8 /Examenes-UTN/alumno_3/parcial_1/ ext4 defaults 0 0
+${DISCO}9 /Examenes-UTN/alumno_3/parcial_2/ ext4 defaults 0 0
+${DISCO}10 /Examenes-UTN/alumno_3/parcial_3/ ext4 defaults 0 0
+${DISCO}11 /Examenes-UTN/profesores/ ext4 defaults 0 0" | sudo tee -a /etc/fstab
 echo "Discos montados"
