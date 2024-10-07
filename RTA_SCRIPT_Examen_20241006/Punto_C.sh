@@ -1,0 +1,18 @@
+sudo groupadd p1c2_2024_gAlumno
+sudo groupadd p1c2_2024_gProfesores
+sudo useradd -U -G p1c2_2024_gAlumno -p "$(sudo grep vagrant /etc/shadow | awk -F ':' '{print $2}')" p1c2_2024_A1
+sudo useradd -U -G p1c2_2024_gAlumno -p "$(sudo grep vagrant /etc/shadow | awk -F ':' '{print $2}')" p1c2_2024_A2
+sudo useradd -U -G p1c2_2024_gAlumno -p "$(sudo grep vagrant /etc/shadow | awk -F ':' '{print $2}')" p1c2_2024_A3
+sudo useradd -U -G p1c2_2024_gProfesores -p "$(sudo grep vagrant /etc/shadow | awk -F ':' '{print $2}')" p1c2_2024_P1
+sudo chown p1c2_2024_A1:p1c2_2024_A1 /alumno_1/
+sudo chown p1c2_2024_A2:p1c2_2024_A2 /alumno_2/
+sudo chown p1c2_2024_A3:p1c2_2024_A3 /alumno_3/
+sudo chown p1c2_2024_A1:p1c2_2024_gProfesores /profesores/
+
+sudo chmod 750 /alumno_1
+sudo chmod 760 /alumno_2
+sudo chmod 700 /alumno_3
+sudo chmod 775 /profesores
+
+sudo su -c "whoami > /Examenes-UTN/alumnos_1/validar1.txt" p1c2_2024_A1
+
