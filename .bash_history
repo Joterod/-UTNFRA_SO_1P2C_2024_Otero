@@ -143,3 +143,48 @@ git add *
 git commit -m "ADD. Se agrega el readme"
 git push
 history -a
+sh ./foo/script_inicial.sh 
+touch correr_todos.sh
+vim correr_todos.sh 
+sh correr_todos.sh 
+sudo sh correr_todos.sh 
+ls
+cd repogit/
+ls
+cd UTNFRA_SO_1P2C_2024_Otero/
+ls
+cd RTA_SCRIPT_Examen_20241006/
+ls
+cd ..
+ls
+rm correr_todos.sh 
+cd repogit/UTNFRA_SO_1P2C_2024_Otero/RTA_SCRIPT_Examen_20241006/
+sh Punto_
+sh Punto_A.sh 
+sh Punto_B.sh 
+sh Punto_C.sh 
+sh Punto_D.sh 
+sh Punto_E.sh 
+ls
+cd ..
+ls
+mkdir -p 
+mkdir -p RTA_ARCHIVOS_Examen_20241006
+ls
+cd RTA_SCRIPT_Examen_20241006/
+sh Punto_E
+sh Punto_E.sh 
+sh Punto_F.sh 
+cd ..
+git status
+git add RTA_ARCHIVOS_Examen_20241006/
+git commit -m "ADD. Se agrega carpeta de archivos, que no se porque no se genero antes"
+cd ..
+ñs
+ls
+cd UTNFRA_SO_1P2C_2024_Otero/
+ls
+ls -la
+cat .bash_history 
+history -a}
+history -a
